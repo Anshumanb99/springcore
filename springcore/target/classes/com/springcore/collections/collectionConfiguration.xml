@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+   
+   <bean name="emp1" class="com.springcore.collections.Emp">
+   
+   <property name="Empname" value="Anshuman"/>
+   
+   <property name="phones">
+   <list>
+   <value>11111</value>
+   <value>111111</value>
+   <value>111113</value>
+   <null/>
+   </list>
+   </property>
+   
+   <property name="address">
+   <set>
+   <value>Delhi</value>
+   <value>Delhi2</value>
+   <value>Delhi3</value>
+   </set>
+   </property>
+   
+   <property name="courses">
+   <map>
+   <entry key="java" value="2 months"></entry>
+   <entry key="javascript" value="21 months"></entry>
+   <entry key="python" value="12 months"></entry>
+   </map>
+   </property>
+   
+   </bean>
+</beans>
